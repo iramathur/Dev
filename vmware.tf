@@ -61,11 +61,6 @@ disk {
     size = "30"
 thin_provisioned = "${data.vsphere_virtual_machine.template.disks.0.thin_provisioned}"
   }
-disk {
-    label="${var.disk3}"
-    size = "20"
-thin_provisioned = "${data.vsphere_virtual_machine.template.disks.0.thin_provisioned}"
-  }
   clone {
     template_uuid = "${data.vsphere_virtual_machine.template.id}"
     customize {
@@ -78,4 +73,4 @@ thin_provisioned = "${data.vsphere_virtual_machine.template.disks.0.thin_provisi
       }
     }
   }
-}                                                                                                                                                                                                                                                           1,1           Top
+                                                                                                                                                                                                                                                          1,1           Top
