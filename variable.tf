@@ -50,3 +50,12 @@ variable "foldername" {
 variable "diskpath" {
     type = "string"
 }
+
+variable "size"{
+    type = "string"
+    }
+
+variable "memory"{
+    type = "string"
+    }
+
