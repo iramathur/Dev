@@ -10,10 +10,6 @@ variable resourcePool {
    
 }
 
-variable cluster {
-   
-}
-
 variable network {
    
 }
