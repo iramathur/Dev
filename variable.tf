@@ -43,10 +43,6 @@ variable "disk1" {
     type = "string"
  }   
 
-variable "disk3" {
-    type = "string"
- }
-
 variable "foldername" {
     type = "string"
 }
