@@ -36,6 +36,10 @@ variable "vmname" {
     type = "string"
 }
 
+variable "numcpu"{
+    type = "string"
+    }
+
 variable "disk1" {
     type = "string"
  }
