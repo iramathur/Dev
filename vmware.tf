@@ -34,7 +34,7 @@ resource "vsphere_virtual_disk" "myDisk" {
 # Set vm parameters
 resource "vsphere_virtual_machine" "vm-one" {
   name                 = "${var.vmname}"
-  num_cpus             = 2
+  num_cpus             = "${var.numcpu}"
   memory               = "${var.memory}"
   datastore_id         = "${data.vsphere_datastore.datastore.id}"
   #host_system_id      = "${data.vsphere_host.host.id}"
