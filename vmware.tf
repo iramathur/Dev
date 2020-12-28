@@ -73,4 +73,4 @@ thin_provisioned = "${data.vsphere_virtual_machine.template.disks.0.thin_provisi
       }
     }
   }
-                                                                                                                                                                                                                                                          1,1           Top
+  }
