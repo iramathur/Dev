@@ -35,7 +35,7 @@ resource "vsphere_virtual_disk" "myDisk" {
 resource "vsphere_virtual_machine" "vm-one" {
   name                 = "${var.vmname}"
   num_cpus             = 2
-  memory               = 2048
+  memory               = "${var.memory}"
   datastore_id         = "${data.vsphere_datastore.datastore.id}"
   #host_system_id      = "${data.vsphere_host.host.id}"
   resource_pool_id     = "${data.vsphere_resource_pool.pool.id}"
@@ -58,7 +58,7 @@ resource "vsphere_virtual_machine" "vm-one" {
   }
 disk {
     label="${var.disk2}"
-    size = "30"
+    size = "${var.size}"
 thin_provisioned = "${data.vsphere_virtual_machine.template.disks.0.thin_provisioned}"
   }
   clone {
